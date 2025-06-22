@@ -22,3 +22,4 @@ while True:
         count_lose += 1
         print("you lost")
         print(f"win = {count_win} \nlose = {count_lose} \n")
+print(" THANKS FOR PLAYING ".center(50,"="))
