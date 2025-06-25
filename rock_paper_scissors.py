@@ -17,37 +17,14 @@ while True:
         print("match tie")
         print(f"win = {count_win} \nlose = {count_lose} \n")
 
-    elif(choice.lower() == "rock"):
-        if(n == "scissor"):
-            count_win += 1
-            print("you won")
-            print(f"win = {count_win} \nlose = {count_lose} \n")
+    elif(choice.lower() == "rock" and n=="scissor")or(choice.lower() == "scissor" and n=="paper")or(choice.lower() == "paper" and n=="paper"):
+        count_win += 1
+        print("you won")
+        print(f"win = {count_win} \nlose = {count_lose} \n")
 
-        else:
-            count_lose += 1
-            print("you lost")
-            print(f"computer chose : {n}")
-            print(f"win = {count_win} \nlose = {count_lose} \n")
-    elif (choice.lower() == "paper"):
-        if (n == "rock"):
-            count_win += 1
-            print("you won")
-            print(f"win = {count_win} \nlose = {count_lose} \n")
-
-        else:
-            count_lose += 1
-            print("you lost")
-            print(f"computer chose : {n}")
-            print(f"win = {count_win} \nlose = {count_lose} \n")
-    elif (choice.lower() == "scissor"):
-        if (n == "paper"):
-            count_win += 1
-            print("you won")
-            print(f"win = {count_win} \nlose = {count_lose} \n")
-
-        else:
-            count_lose += 1
-            print("you lost")
-            print(f"computer chose : {n}")
-            print(f"win = {count_win} \nlose = {count_lose} \n")
+    else:
+        count_lose += 1
+        print("you lost")
+        print(f"computer chose : {n}")
+        print(f"win = {count_win} \nlose = {count_lose} \n")
 print(" THANKS FOR PLAYING ".center(50,"="))
